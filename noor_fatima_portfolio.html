@@ -1,0 +1,212 @@
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--font-sans); }
+  .port { background: #0d0d14; color: #e8e8f0; min-height: 100vh; }
+  .nav { display: flex; justify-content: space-between; align-items: center; padding: 18px 32px; border-bottom: 0.5px solid #2a2a3a; }
+  .nav-logo { font-size: 15px; font-weight: 500; letter-spacing: 2px; color: #c8b4f8; }
+  .nav-links { display: flex; gap: 24px; }
+  .nav-links a { font-size: 13px; color: #888; text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover { color: #c8b4f8; }
+  .hero { padding: 72px 32px 56px; border-bottom: 0.5px solid #1e1e2e; }
+  .hero-tag { display: inline-block; font-size: 11px; letter-spacing: 2px; color: #c8b4f8; border: 0.5px solid #c8b4f840; padding: 4px 12px; border-radius: 20px; margin-bottom: 20px; }
+  .hero h1 { font-size: 42px; font-weight: 500; line-height: 1.15; color: #f0eeff; margin-bottom: 14px; }
+  .hero h1 span { color: #c8b4f8; }
+  .hero-sub { font-size: 15px; color: #888; line-height: 1.7; max-width: 560px; margin-bottom: 32px; }
+  .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn-primary { background: #c8b4f8; color: #0d0d14; font-size: 13px; font-weight: 500; padding: 10px 22px; border-radius: 6px; text-decoration: none; border: none; cursor: pointer; }
+  .btn-outline { background: transparent; color: #c8b4f8; font-size: 13px; font-weight: 500; padding: 10px 22px; border-radius: 6px; border: 0.5px solid #c8b4f860; text-decoration: none; cursor: pointer; }
+  .section { padding: 56px 32px; border-bottom: 0.5px solid #1e1e2e; }
+  .section-label { font-size: 11px; letter-spacing: 2px; color: #c8b4f8; margin-bottom: 6px; }
+  .section-title { font-size: 22px; font-weight: 500; color: #f0eeff; margin-bottom: 32px; }
+  .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 16px; }
+  .stat-card { background: #13131f; border: 0.5px solid #2a2a3a; border-radius: 10px; padding: 20px 16px; }
+  .stat-num { font-size: 28px; font-weight: 500; color: #c8b4f8; line-height: 1; }
+  .stat-label { font-size: 12px; color: #666; margin-top: 6px; line-height: 1.4; }
+  .stat-note { font-size: 11px; color: #444; margin-top: 24px; font-style: italic; }
+  .work-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .work-card { background: #13131f; border: 0.5px solid #2a2a3a; border-radius: 10px; padding: 24px; }
+  .work-card-tag { font-size: 10px; letter-spacing: 1.5px; color: #c8b4f8; margin-bottom: 10px; }
+  .work-card h3 { font-size: 15px; font-weight: 500; color: #e8e8f0; margin-bottom: 8px; }
+  .work-card p { font-size: 13px; color: #666; line-height: 1.6; }
+  .work-card .tools { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+  .tool-pill { font-size: 11px; color: #9980d4; background: #1e1a30; border-radius: 4px; padding: 3px 8px; }
+  .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+  .skill-group { background: #13131f; border: 0.5px solid #2a2a3a; border-radius: 10px; padding: 18px; }
+  .skill-group-title { font-size: 11px; letter-spacing: 1.5px; color: #c8b4f8; margin-bottom: 12px; }
+  .skill-item { font-size: 13px; color: #888; padding: 5px 0; border-bottom: 0.5px solid #1e1e2e; }
+  .skill-item:last-child { border-bottom: none; }
+  .contact-box { background: #13131f; border: 0.5px solid #2a2a3a; border-radius: 10px; padding: 32px; max-width: 480px; }
+  .contact-row { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 0.5px solid #1e1e2e; font-size: 14px; color: #888; }
+  .contact-row:last-child { border-bottom: none; }
+  .contact-row span:first-child { font-size: 11px; letter-spacing: 1px; color: #555; width: 80px; }
+  .contact-row a { color: #c8b4f8; text-decoration: none; }
+  .accent-bar { width: 32px; height: 2px; background: #c8b4f8; border-radius: 1px; margin-bottom: 20px; }
+</style>
+
+<div class="port">
+  <nav class="nav">
+    <div class="nav-logo">NOOR FATIMA</div>
+    <div class="nav-links">
+      <a href="#work">work</a>
+      <a href="#skills">skills</a>
+      <a href="#contact">contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-tag">SOCIAL MEDIA · CONTENT · DESIGN</div>
+    <h1>Creating content<br>that <span>actually performs</span></h1>
+    <p class="hero-sub">Computer Science student at Swinburne · Melbourne, VIC. Experienced in social media management, graphic design, video editing, and building digital brands from scratch.</p>
+    <div class="hero-btns">
+      <a class="btn-primary" href="https://www.instagram.com/noorr_films" target="_blank">View Instagram ↗</a>
+      <a class="btn-outline" href="mailto:noorfatimanisar16@outlook.com">Get in touch</a>
+    </div>
+  </section>
+
+  <section class="section" id="work">
+    <div class="section-label">FEATURED RESULTS</div>
+    <div class="section-title">Triathlon 6.0 — Instagram Campaign</div>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-num">25.7K</div>
+        <div class="stat-label">Peak reel views</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">7,818</div>
+        <div class="stat-label">Accounts reached</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">1,330</div>
+        <div class="stat-label">Interactions</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">308</div>
+        <div class="stat-label">Shares</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">3d 8h</div>
+        <div class="stat-label">Total watch time</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">26%</div>
+        <div class="stat-label">Non-follower reach</div>
+      </div>
+    </div>
+    <p class="stat-note">Managed end-to-end as Event Head and sole social media coordinator for a student-run event in Lahore, 2024. Multiple reels hit 15K–25K views organically.</p>
+  </section>
+
+  <section class="section">
+    <div class="section-label">WORK</div>
+    <div class="section-title">Projects & experience</div>
+    <div class="work-grid">
+      <div class="work-card">
+        <div class="work-card-tag">SOCIAL MEDIA</div>
+        <h3>Triathlon 6.0 — Instagram</h3>
+        <p>Planned, designed, and managed the full Instagram presence for a major student event. Content calendar, branded reels, stories, and post-event wrap content.</p>
+        <div class="tools">
+          <span class="tool-pill">Canva</span><span class="tool-pill">Instagram</span><span class="tool-pill">CapCut</span>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="work-card-tag">BRAND DESIGN</div>
+        <h3>Small business logos</h3>
+        <p>Designed logos and brand identity assets for multiple small business clients. Managed client briefs through to final delivery of print-ready and digital files.</p>
+        <div class="tools">
+          <span class="tool-pill">Canva</span><span class="tool-pill">Figma</span>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="work-card-tag">VIDEO EDITING</div>
+        <h3>British Council — Your World</h3>
+        <p>Edited and colour-graded a competition submission video for the British Council's Your World competition, 2024.</p>
+        <div class="tools">
+          <span class="tool-pill">DaVinci Resolve</span><span class="tool-pill">CapCut</span>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="work-card-tag">CONTENT CREATION</div>
+        <h3>Bunyaad NGO — Graphic Design</h3>
+        <p>Produced social and campaign graphics for an active Pakistani non-profit, maintaining brand consistency across all assets.</p>
+        <div class="tools">
+          <span class="tool-pill">Canva</span>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="work-card-tag">CMS & BLOGGING</div>
+        <h3>Personal websites (Wix & Weebly)</h3>
+        <p>Built and managed two media-focused websites. Handled all content, layout, scheduling, and performance monitoring.</p>
+        <div class="tools">
+          <span class="tool-pill">Wix</span><span class="tool-pill">Weebly</span>
+        </div>
+      </div>
+      <div class="work-card">
+        <div class="work-card-tag">LEADERSHIP</div>
+        <h3>President — Media Society, LGS</h3>
+        <p>Led a 20+ member student media org. Oversaw creative direction, content production, and event execution. Won 3 design awards at JTMuse 2024.</p>
+        <div class="tools">
+          <span class="tool-pill">Event management</span><span class="tool-pill">Team leadership</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <div class="section-label">SKILLS</div>
+    <div class="section-title">Tools & capabilities</div>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <div class="skill-group-title">PLATFORMS</div>
+        <div class="skill-item">Instagram · TikTok · Facebook</div>
+        <div class="skill-item">LinkedIn · Meta Business Suite</div>
+        <div class="skill-item">Wix · Weebly (CMS)</div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">DESIGN & VIDEO</div>
+        <div class="skill-item">Canva</div>
+        <div class="skill-item">Figma</div>
+        <div class="skill-item">DaVinci Resolve · CapCut</div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">CONTENT</div>
+        <div class="skill-item">Content calendar planning</div>
+        <div class="skill-item">Copywriting & captions</div>
+        <div class="skill-item">Short-form video & reels</div>
+        <div class="skill-item">Analytics & reporting</div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-group-title">TECHNICAL</div>
+        <div class="skill-item">Computer Science (Swinburne)</div>
+        <div class="skill-item">AI tools — actively exploring</div>
+        <div class="skill-item">Brand identity systems</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="section-label">CONTACT</div>
+    <div class="section-title">Let's work together</div>
+    <div class="contact-box">
+      <div class="contact-row">
+        <span>EMAIL</span>
+        <a href="mailto:noorfatimanisar16@outlook.com">noorfatimanisar16@outlook.com</a>
+      </div>
+      <div class="contact-row">
+        <span>PHONE</span>
+        <span>+61 413 096 420</span>
+      </div>
+      <div class="contact-row">
+        <span>LOCATION</span>
+        <span>Hawthorn, VIC 3122</span>
+      </div>
+      <div class="contact-row">
+        <span>INSTAGRAM</span>
+        <a href="https://www.instagram.com/noorr_films" target="_blank">@noorr_films ↗</a>
+      </div>
+      <div class="contact-row">
+        <span>AVAILABLE</span>
+        <span>Casual / part-time · ASAP</span>
+      </div>
+    </div>
+  </section>
+</div>
